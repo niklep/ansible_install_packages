@@ -1,0 +1,18 @@
+---
+redhat_packages:
+  - libselinux-python
+  - nmap
+  - htop
+  - open-vm-tools
+  - gpg
+  - sudo
+  - curl
+
+debian_packages:
+  - nmap
+  - htop
+  - open-vm-tools
+  - gpg
+  - sudo
+  - curl
+  

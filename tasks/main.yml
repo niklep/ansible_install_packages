@@ -1,0 +1,12 @@
+---
+- name: install packages for RedHat distr
+  yum:
+    name: "{{ redhat_packages }}"
+    state: latest
+  when: ansible_os_family == "RedHat"
+
+- name: install packages for Debian based distr
+  apt:
+    pkg: "{{ debian_packages }}"
+    state: latest
+  when: ansible_os_family == "Debian"
